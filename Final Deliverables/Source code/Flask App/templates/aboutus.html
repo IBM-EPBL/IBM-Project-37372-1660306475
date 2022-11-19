@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/style.css/login.css">
+    <style>
+        body {
+            background-image: url('static/1.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            
+          }
+    p{
+        color: white;
+        font-size:30px;
+        text-align: center;
+        margin:150px;
+        font-weight: 900;
+      }
+      .head{
+        font-size: 30px;
+        margin-top: 10px;
+        color: white;
+            }
+    </style>
+</head>
+<body>
+    
+      
+    <div class="navbar">
+
+        <h1 class="head">AI Based Discourse for Banking Industry </h1>
+      
+
+    <nav>
+        <ul id='MenuItems'>
+            <li><a href="  {{ url_for('login') }}">Home</a></li>
+            <li><a href="  {{ url_for('account') }}">Account</a></li>
+            <li><a href=" {{ url_for('aboutus') }}">About Us</a></li>
+            <li><a href=" {{ url_for('services') }}">Services</a></li>
+         
+        </ul>
+    </nav>
+</div>
+<br><br><br>
+    <p>
+    Online banking allows a user to conduct financial transactions via the Internet. Online banking is also known as Internet banking or web banking. Online banking offers customers almost every service traditionally available through a local branch including deposits, transfers, and online bill payments.  It's quick, usually free and allows you to do tasks, such as paying bills and transferring money, without having to visit or call your bank<p>
+</body>
+<script>
+    window.watsonAssistantChatOptions = {
+        integrationID: "1206a417-c053-4bee-a810-037a99f37b2a", // The ID of this integration.
+        region: "us-south", // The region your integration is hosted in.
+        serviceInstanceID: "e81248c6-9605-415f-843b-666356f451ec", // The ID of your service instance.
+        onLoad: function (instance) { instance.render(); }
+    };
+    setTimeout(function () {
+        const t = document.createElement('script');
+        t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+        document.head.appendChild(t);
+    });
+</script>
+
+</html>
