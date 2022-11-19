@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>VSYS BANK</title>
+  <link rel="stylesheet" href="../static/css/style.css/login.css">
+  <style>
+    body {
+      background-image: url('static/1.png');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+    }
+
+    h1 {
+      color: white;
+    }
+    .detail{
+      font-size: 26px;
+      color: white;
+      margin-top: 170px;
+      margin-left: 25px;
+      font-family:sans-serif;
+    }
+  </style>
+  <!---we had linked our css file----->
+</head>
+
+<body>
+  <div class="full-page">
+    <div class="navbar">
+     
+        <p>
+        <h1>AI Based Discourse for Banking Industry </h1>
+        </p>
+      
+      <nav>
+        <ul id='MenuItems'>
+          <li><a href="  {{ url_for('login') }}">Home</a></li>
+          <li><a href="  {{ url_for('account') }}">Account</a></li>
+          <li><a href=" {{ url_for('aboutus') }}">About Us</a></li>
+          <li><a href=" {{ url_for('services') }}">Services</a></li>
+          
+
+        </ul>
+      </nav>
+    </div>
+
+    <p class="detail">VSYS BANKING BOT<br> TEAM ID: PNT2022TMID29862 <br> TEAM MEMBERS:<br> <B>VINISHA R<br>
+        SANDHIYA P<br> YOGAMALYA P<br> SHAHEERABANU C<br> </B></p>
+
+  </div>
+ 
+
+
+  <script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "1206a417-c053-4bee-a810-037a99f37b2a", // The ID of this integration.
+      region: "us-south", // The region your integration is hosted in.
+      serviceInstanceID: "e81248c6-9605-415f-843b-666356f451ec", // The ID of your service instance.
+      onLoad: function (instance) { instance.render(); }
+    };
+    setTimeout(function () {
+      const t = document.createElement('script');
+      t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>
+
+</body>
+
+</html>
